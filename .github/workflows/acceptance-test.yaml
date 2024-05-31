@@ -18,7 +18,7 @@ jobs:
     - name: Checkout fern-reporter repository
       uses: actions/checkout@v3
       with:
-        repository: https://github.com/Guidewire/fern-reporter.git
+        repository: Guidewire/fern-reporter
         path: fern-reporter
 
     - name: Set up Go
