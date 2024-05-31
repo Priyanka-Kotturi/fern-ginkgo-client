@@ -28,7 +28,9 @@ jobs:
     
     - name: Start Fern server
       working-directory: ./fern-reporter
-      run: make docker-run-local
+      run: 
+         go install github.com/mitchellh/gox@latest
+         make docker-run-local
 
     - name: Run Tests
       working-directory: ./fern-gingko-client
